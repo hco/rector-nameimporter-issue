@@ -22,9 +22,12 @@ class ExtendClassRector extends AbstractRector
         return [Node\Stmt\Class_::class];
     }
 
+    /**
+     * @param Node\Stmt\Class_ $node
+     */
     public function refactor(Node $node): ?Node
     {
-        if ($node->extends !== null) {
+        if ($node->name->toString() !== "TestClass") {
             return null;
         }
         $node->extends = $this->nameImporter->importName(new Node\Name\FullyQualified(ParentClass::class));
