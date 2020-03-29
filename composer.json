@@ -1,0 +1,17 @@
+{
+    "name": "hco/rector-debugging",
+    "require": {
+        "rector/rector": "^0.7.7"
+    },
+    "authors": [
+        {
+            "name": "Hans-Christian Otto",
+            "email": "c.otto@suora.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    }
+}
