@@ -19,5 +19,5 @@ jobs:
           coverage: none
 
       -   run: composer install --no-progress
-      -   run: ./vendor/bin/rector    process -n src/
       -   run: ./vendor/bin/rector    process -n src/Domain/
+      -   run: ./vendor/bin/rector    process -n src/
