@@ -1,8 +1,9 @@
 {
     "name": "hco/rector-debugging",
     "require": {
-        "rector/rector": "^0.7.7"
+        "rector/rector": "dev-master"
     },
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Hans-Christian Otto",
